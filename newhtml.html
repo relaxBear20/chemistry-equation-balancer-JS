@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="newcss.css">
+    </head>
+
+    <body>
+        <div id ="p"></div>
+        
+        <div class ="bodyFrame">
+            <section>
+                <div class ="head">
+                    <h2>CAN BANG PHUONG TRINH HOA HOC</h2>
+                </div>
+            </section>
+            
+            <section>
+                <div class="pHead" ></div>
+                <div class ="inputFrame" >
+                    <input id ="input" type="text" placeholder="VD: H2 + O2 = H2O..." >
+       
+                    <input type ="submit" value="Go" onclick="inputAndCheck()" >
+                    <input disabled="" id="output" type ="text" placeholder="Output" onclick="outputOveride()">
+                    
+                </div>
+                    <div id = "w"></div>
+            </section>
+            
+            <section>
+                <div class="pHead" ></div>
+                <div class = "inputButtonFrame">
+                    
+                    <section>
+                        <div class="untility" >
+                            <table id="utilityGrid">
+                                <tr><td><input class="utilButton" type ="button" value ="AC" onclick ="AC()" ></td>
+                                    <td><input class="utilButton" type ="button" value ="Back" onclick ="back()" ></td>
+                                    <td><input class="utilButton" type ="button" onclick="set(this)" value=" + "></td>
+                                    <td><input class="utilButton" type ="button" onclick="set(this)" value=" = "></td>
+                                    <td><input class="utilButton" type ="button" onclick="set(this)" value="("></td>
+                                    <td><input class="utilButton" type ="button" onclick="set(this)" value=")"></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </section>
+                    <table id="buttonGrid" >
+                        <tr>
+                            <td><input class="Ebutton" type ="button" onclick="set(this)" value="H"></td>
+                            <td colspan="16"></td>
+                            <td><input type ="button" onclick="set(this)" value="He"></td>
+                        </tr>
+                        <tr>
+                            <td><input class="Ebutton" type ="button" onclick="set(this)" value="Li"></td>
+                            <td><input class="Ebutton" type ="button" onclick="set(this)" value="Be"></td>
+                            <td colspan="10"></td>
+                            <td><input class="Ebutton" type ="button" onclick="set(this)" value="B"></td>
+                            <td><input class="Ebutton" type ="button" onclick="set(this)" value="C"></td>
+                            <td><input class="Ebutton" type ="button" onclick="set(this)" value="N"></td>
+                            <td><input class="Ebutton" type ="button" onclick="set(this)" value="O"></td>
+                            <td><input class="Ebutton" type ="button" onclick="set(this)" value="F"></td>
+                            <td><input class="Ebutton" type ="button" onclick="set(this)" value="Ne"></td>
+                        </tr>
+                        <tr>
+                            <td><input class="Ebutton" type ="button" onclick="set(this)" value="Na"></td>
+                            <td><input class="Ebutton" type ="button" onclick="set(this)" value="Mg"></td>
+                            <td colspan="10"></td>
+                            <td><input class="Ebutton" type ="button" onclick="set(this)" value="Al"></td>
+                            <td><input class="Ebutton" type ="button" onclick="set(this)" value="Si"></td>
+                            <td><input class="Ebutton" type ="button" onclick="set(this)" value="P"></td>
+                            <td><input class="Ebutton" type ="button" onclick="set(this)" value="S"></td>
+                            <td><input class="Ebutton" type ="button" onclick="set(this)" value="Cl"></td>
+                            <td><input class="Ebutton" type ="button" onclick="set(this)" value="Ar"></td>
+                        </tr>
+                        <tr>
+                            <td><input class="Ebutton" type ="button" onclick="set(this)" value="K"></td>
+                            <td><input class="Ebutton" type ="button" onclick="set(this)" value="Ca"></td>
+                            <td><input class="Ebutton" type ="button" onclick="set(this)" value="Sc"></td>
+                            <td><input class="Ebutton" type ="button" onclick="set(this)" value="Ti"></td>
+                            <td><input class="Ebutton" type ="button" onclick="set(this)" value="V"></td>
+                            <td><input class="Ebutton" type ="button" onclick="set(this)" value="Cr"></td>
+                            <td><input class="Ebutton" type ="button" onclick="set(this)" value="Mn"></td>
+                            <td><input class="Ebutton" type ="button" onclick="set(this)" value="Fe"></td>
+                            <td><input class="Ebutton" type ="button" onclick="set(this)" value="Co"></td>
+                            <td><input class="Ebutton" type ="button" onclick="set(this)" value="Ni"></td>
+                            <td><input class="Ebutton" type ="button" onclick="set(this)" value="Cu"></td>
+                            <td><input class="Ebutton" type ="button" onclick="set(this)" value="Zn"></td>
+                            <td><input class="Ebutton" type ="button" onclick="set(this)" value="Ga"></td>
+                            <td><input class="Ebutton" type ="button" onclick="set(this)" value="Ge"></td>
+                            <td><input class="Ebutton" type ="button" onclick="set(this)" value="As"></td>
+                            <td><input class="Ebutton" type ="button" onclick="set(this)" value="Se"></td>
+                            <td><input class="Ebutton" type ="button" onclick="set(this)" value="Br"></td>
+                            <td><input class="Ebutton" type ="button" onclick="set(this)" value="Kr"></td>
+                        </tr>
+                        <tr>
+                            <td><input class="Ebutton" type ="button" onclick="set(this)" value="Rb"></td>
+                            <td><input class="Ebutton" type ="button" onclick="set(this)" value="Sr"></td>
+                            <td><input class="Ebutton" type ="button" onclick="set(this)" value="Y"></td>
+                            <td><input class="Ebutton" type ="button" onclick="set(this)" value="Zr"></td>
+                            <td><input class="Ebutton" type ="button" onclick="set(this)" value="Nb"></td>
+                            <td><input class="Ebutton" type ="button" onclick="set(this)" value="Mo"></td>
+                            <td><input class="Ebutton" type ="button" onclick="set(this)" value="Tc"></td>
+                            <td><input class="Ebutton" type ="button" onclick="set(this)" value="Ru"></td>
+                            <td><input class="Ebutton" type ="button" onclick="set(this)" value="Rh"></td>
+                            <td><input class="Ebutton" type ="button" onclick="set(this)" value="Pd"></td>
+                            <td><input class="Ebutton" type ="button" onclick="set(this)" value="Ag"></td>
+                            <td><input class="Ebutton" type ="button" onclick="set(this)" value="Cd"></td>
+                            <td><input class="Ebutton" type ="button" onclick="set(this)" value="In"></td>
+                            <td><input class="Ebutton" type ="button" onclick="set(this)" value="Sn"></td>
+                            <td><input class="Ebutton" type ="button" onclick="set(this)" value="Sb"></td>
+                            <td><input class="Ebutton" type ="button" onclick="set(this)" value="Te"></td>
+                            <td><input class="Ebutton" type ="button" onclick="set(this)" value="I"></td>
+                            <td><input class="Ebutton" type ="button" onclick="set(this)" value="Xe"></td>
+                        </tr>
+                        <tr>
+                            <td><input class="Ebutton" type ="button" onclick="set(this)" value="Cs"></td>
+                            <td><input class="Ebutton" type ="button" onclick="set(this)" value="Ba"></td>
+                            <td><input class="Ebutton" type ="button" onclick="set(this)" value="La"></td>
+                            <td><input class="Ebutton" type ="button" onclick="set(this)" value="Hf"></td>
+                            <td><input class="Ebutton" type ="button" onclick="set(this)" value="Ta"></td>
+                            <td><input class="Ebutton" type ="button" onclick="set(this)" value="W"></td>
+                            <td><input class="Ebutton" type ="button" onclick="set(this)" value="Re"></td>
+                            <td><input class="Ebutton" type ="button" onclick="set(this)" value="Os"></td>
+                            <td><input class="Ebutton" type ="button" onclick="set(this)" value="Ir"></td>
+                            <td><input class="Ebutton" type ="button" onclick="set(this)" value="Pt"></td>
+                            <td><input class="Ebutton" type ="button" onclick="set(this)" value="Au"></td>
+                            <td><input class="Ebutton" type ="button" onclick="set(this)" value="Hg"></td>
+                            <td><input class="Ebutton" type ="button" onclick="set(this)" value="Ti"></td>
+                            <td><input class="Ebutton" type ="button" onclick="set(this)" value="Pb"></td>
+                            <td><input class="Ebutton" type ="button" onclick="set(this)" value="Bi"></td>
+                            <td><input class="Ebutton" type ="button" onclick="set(this)" value="Po"></td>
+                            <td><input class="Ebutton" type ="button" onclick="set(this)" value="At"></td>
+                            <td><input class="Ebutton" type ="button" onclick="set(this)" value="Rn"></td>
+                        </tr>
+                    </table>
+                    <table id="buttonNumberGrid" >
+                        <tr>
+                            <td><input class ="numberButton" type ="button" onclick="set(this)" value="1"></td>
+                            <td><input class ="numberButton" type ="button" onclick="set(this)" value="2"></td>
+                            <td><input class ="numberButton" type ="button" onclick="set(this)" value="3"></td>
+                            <td><input class ="numberButton" type ="button" onclick="set(this)" value="4"></td>
+                            <td><input class ="numberButton" type ="button" onclick="set(this)" value="5"></td>
+                            <td><input class ="numberButton" type ="button" onclick="set(this)" value="6"></td>
+                            <td><input class ="numberButton" type ="button" onclick="set(this)" value="7"></td>
+                            <td><input class ="numberButton" type ="button" onclick="set(this)" value="8"></td>
+                            <td><input class ="numberButton" type ="button" onclick="set(this)" value="9"></td>
+                        </tr>
+                    </table>
+                </div>
+
+            </section>
+
+        </div>
+    </body>
+    <script src="newjavascript.js">
+
+    </script>
+</html>
